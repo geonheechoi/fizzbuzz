@@ -1,13 +1,19 @@
-function FizzBuzzA(value1, value2){
+
+
+
+
+
+function FizzBuzzA(value1){
+  console.log("IS this working?");
     let returnValue="";
-    for(let i=1;i<=100;i++){
-         if(i%value1==0 && 1%value2==0){
+    for(let i=1;i<=value1;i++){
+         if(i%value1==0){
            returnValue +='FizzBuzz';
          }
-         else if(1%value1==0){
+         else if(i%value1==1){
            returnValue +='Fizz';
            }
-         else if(i%value2==0){
+         else if(i%value1==0||i%value1==1){
           returnValue+='Buzz';
           }
           else{
@@ -19,9 +25,13 @@ function FizzBuzzA(value1, value2){
 
    function buzzIt(){
     let output="";
-    let val1=document.getElementById('Fizzvalue').value;
-    let val2=document.getElementById('Buzzvalue').value;
-    output=FizzBuzzA(val1,val2);
-    document.getElementById('results').innerHTML =output;
+    const val1=document.getElementById("num");
+    val1.className="standard-button";
+    val1.style.background="blue";
+    val1.tagName
+    "BUTTON"
+    output=FizzBuzzA(val1);
+    
+    document.getElementById("num").innerHTML =output;
   
   }
