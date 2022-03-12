@@ -1,12 +1,9 @@
 
 
 
-
-
-
  get("http://basic-web.dev.avc.web.usf.edu").then(function(response){
   //Put all code that relies on the data from this request in here.
-  console.log(" get Does it work"+response);
+  
  if(response.status == 200){
     const username= response.data.id; //The username that was requested. In this case it is "myUserName".
     const score= response.data.score; //The user's current score.
@@ -19,7 +16,7 @@
 });
 
 function get(url) {
-  console.log("get work");
+  
   return new Promise((resolve, reject) => {
     const http = new XMLHttpRequest ();
     http.onload = function  (){
@@ -31,7 +28,7 @@ function get(url) {
 }
 
 const dataToSend = { score: 5 };
-console.log("datasend work");
+
     post("http://basic-web.dev.avc.web.usf.edu", dataToSend).then(function(response){
       switch(response.status){
         case 200:
@@ -75,7 +72,7 @@ console.log("datasend work");
   }
   
 function FizzBuzzA(value1){
-  console.log("operator function ");
+  
     let returnValue=""
          if(value1%5==0&&value1==0){
          
@@ -95,7 +92,7 @@ function FizzBuzzA(value1){
    }
 
    function buzzIt(){
-   console.log("Execute function");
+   
     let output="";
     const val1=parseInt(document.getElementById('inp').value);
     console.log("value1:" + val1);
@@ -106,11 +103,3 @@ function FizzBuzzA(value1){
     document.getElementById('num').value = output;
   
   }
-
-/*
-  @typedef {{id: string, score: number}} User
-  
-  @typedef {{Error: string}} Error
-@typedef {{status: number, data: User|Error}} Response 
-*/
-  
