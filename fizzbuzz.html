@@ -3,26 +3,35 @@
 <html lang="en">
     <head>
         <style>
+      #inp{
+        color:blue;
+        background-color: red;
+
+      }
       
-        </style>
+      
+    </style>
+      
     <meta charset ="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
    
    
     <title>Fizzbuzz SVC project Geonhee Choi</title>
-</head>
+      </head>
+
  
  <body> 
-     <form action="http://basic-web.dev.avc.web.usf.edu." method="GET"> </form>
-      <a href="http://basic-web.dev.avc.web.usf.edu"></a>
-    <label<span> Welcome to fizzbuzz:</span></label>  
+      <form action="http://basic-web.dev.avc.web.usf.edu" method='GET' onclick ="get()"  id="username" url='0'> 
+        <a href="http://basic-web.dev.avc.web.usf.edu"></a>
+
+      </form>
+    <label><span> Welcome to fizzbuzz:</span></label>  
        
 
 <script src="fizzbuzz.js">
     
-</script>
-
+  </script>
 <div>
     <button onclick = "buzzIt()" type="button" id="inp" value = '0'>click to increment </button>
     </div>
@@ -35,6 +44,7 @@
        
     
       </div>
+   
 
      
 </body>
